@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #b95f5f;
+    text-align: center;
+    position: relative;
+    padding: 40px 20px; /* Ajuste a margem superior (40px) conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinhe o menu à direita */
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Distância do canto direito */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+
+h1 {
+    margin-top: 50px; /* Ajuste conforme necessário para evitar sobreposição com o menu */
+}
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.linha-produtos {
+    display: flex;
+    justify-content: space-around;
+    width: 150%;
+    margin-bottom: 10px; 
+    background-color: #f57b7b;
+}
+
+.produto {
+    text-align: center;
+    width: 25%;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    height: 50%; /* Defina a altura como 100% para evitar distorções */
+    object-fit: cover; /* Mantenha a proporção da imagem, cortando se necessário */
+    display: block;
+}
+
+#quem-somos {
+    display: grid;
+    grid-template-rows: auto 2fr; /* Ajusta a altura das linhas conforme necessário */
+    min-height: 55vh; /* Garante que a seção seja pelo menos 100% da altura da tela */
+    background-color: #ff8888;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-align: left; /* Modificado de 'justify' para 'left' para alinhar à esquerda */
+    box-sizing: border-box; /* Garante que o preenchimento não aumente o tamanho total */
+}
+
+.sobre-loja h2 {
+    text-align: center; /* Adicionado para centralizar apenas o título */
+    padding: 20px;
+}
+
+.mensagem-natalina {
+    text-align: center;
+    color: #006400; /* Cor verde escura */
+}
+
+.mensagem-natalina h2 {
+    color: #800000; /* Cor vermelha escura para o título */
+}
+
+/* Adicionando alguns estilos para o formulário e mensagem de confirmação */
+#formulario {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario label,
+#formulario textarea,
+#formulario button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#confirmacaoMensagem {
+    color: green;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Efeito de fade-in para a mensagem de confirmação */
+.fade-in {
+    opacity: 1 !important;
+}

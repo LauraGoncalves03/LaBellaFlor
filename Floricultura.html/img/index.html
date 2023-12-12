@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>La Bella Flor</title>
+</head>
+<body>
+    <header>
+        <h1>La Bella Flor - Sinta a natureza, mesmo à distância 🌿</h1>
+        <nav>
+            <ul>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#Presente">Presenteie quem você ama &hearts;</a></li>
+            <li><a href="#quem-somos">Sobre nós </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="produtos">
+        <div class="produto">
+            <div class="linha-produtos"></div>
+            <br>
+            <img src="costaladeadao.jpg" alt="Planta 1">
+            <h2>Costela de Adão</h2>
+            <p></p>
+            <p>R$ 98,90</p>
+            <p>3x de R$ 32,97 sem juros</p>
+            <button onclick="mostrarFormulario('Costela de Adão')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <br>
+            <img src="tulipas.jpeg" alt="Planta 8">
+            <h2>Buquê de tulipas</h2>
+            <p>R$189,30</p>
+            <p>3x de R$63,10</p>
+            <button onclick="mostrarFormulario('Buquê de tulipas')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <br>
+            <img src="buquederosas.jpg" alt="Planta 3">
+            <h2>Buquê de 24 rosas vermelhas</h2>
+            <p>R$ 289,90</p>
+            <p>3x de R$ 96,63 sem juros</p>
+            <button onclick="mostrarFormulario('Buquê de 24 rosas vermelhas')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <img src="orquidea.jpg" alt="Planta 4">
+            <h2>Orquídea Dupla Haste</h2>
+            <p>R$ 199,00</p>
+            <p>Este produto não está disponível para vendas no momento</p>
+            <button onclick="mostrarFormulario('Orquídea Dupla Haste, peço que me avise quando tiver disponível')">Avise-me quando disponível</button>
+        </div>
+        <div class="produto">
+            <img src="samambaia.jpg" alt="Planta 5">
+            <h2>Samambaia</h2>
+            <p>R$90,00</p>
+            <p>2x de R$ 45,00 sem juros</p>
+            <button onclick="mostrarFormulario('Samambaia')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <img src="rosadodeserto.jpeg" alt="Planta 6">
+            <h2>Rosa do Deserto</h2>
+            <p>R$189,00</p>
+            <p>3x de R$ 63,00 sem juros</p>
+            <button onclick="mostrarFormulario('Rosa do Deserto')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <img src="cacto.jpg" alt="Planta 7">
+            <h2>Cacto</h2>
+            <p>R$30,00</p>
+            <button onclick="mostrarFormulario('Cacto')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <img src="poinsetia.jpeg" alt="Planta 8">
+            <h2>Poinsétia</h2>
+            <p>R$142,60</p>
+            <p>3x de R$ 47,53 sem juros</p>
+            <button onclick="mostrarFormulario('Poinsétia')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <img src="girrasol.jpg" alt="Planta 2">
+            <h2>Buquê de girassóis clássico</h2>
+            <p>R$ 219,86</p>
+            <p>3x de R$ 73,29 sem juros</p>
+            <button onclick="mostrarFormulario('Buquê de girassóis clássico')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <section id="Presente"></section>
+            <img src="presente.jpeg" alt="Planta 8">
+            <h2>Caixa: Rosas e Vinho</h2>
+            <p>R$350,00</p>
+            <p>4x de R$87,50 sem juros</p>
+            <button onclick="mostrarFormulario('Caixa: Rosas e Vinho')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <img src="presente.jpeg.jpeg" alt="Planta 8">
+            <h2>Carta com vinho e rosas</h2>
+            <p>R$209,20</p>
+            <p>4x de R$52,30 sem juros</p>
+            <button onclick="mostrarFormulario('Carta com vinho e rosas')">Solicitar</button>
+        </div>
+        <div class="produto">
+            <img src="presente3.jpeg" alt="Planta 8">
+            <h2>Buquê de rosas em formato de coração</h2>
+            <p>R$194,80</p>
+            <P>4x de R$48,70 sem juros</P>
+            <button onclick="mostrarFormulario('Buquê de rosas em formato de coração')">Solicitar</button>
+            </div>
+            </body>
+                <section>
+                    <section id="formulario" style="display: none;">
+                        <h2>Formulário de Contato</h2>
+                        <form id="contatoForm">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="WhatsApp">WhatsApp:</label>
+                            <input type="number" id="WhatsApp" name="WhatsApp" required>
+                
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                            <button type="button" onclick="enviarFormulario()">Enviar</button>
+                        </form>
+                        <div id="confirmacaoMensagem" class="hidden">
+                             <p>Obrigado pelo seu contato! Responderemos em breve.</p>
+                             <p>Com carinho florido.</p>
+                             <p>A equipe da La Bella Flor 🌸</p>
+                        </div>
+                    </section>
+                    <section id="quem-somos">
+                        <div class="sobre-loja">
+                            <h2>Sobre Nossa Loja Online 🌿</h2>
+                            <p>Na atmosfera encantadora da La Bella Flor, somos guiados pela paixão, pela natureza, pelo toque delicado das flores e pela visão inspiradora de nossa fundadora, Laura Gonçalves. Aos seus jovens 22 anos, Laura empreende uma jornada floral única, criando um oásis floral onde a beleza floresce em cada pétala.</p>
+                            <p>La Bella Flor é mais do que uma simples floricultura online; é um testemunho do amor de Laura pela flora. Cada arranjo, buquê e planta são cuidadosamente selecionados e dispostos para transmitir a essência de sua paixão pela beleza natural. Desde flores exuberantes até presentes encantadores,ela cria um espaço onde a natureza se encontra com a arte.</p>
+                            <p>Explore La Bella Flor, sinta a magia da juventude e celebre a beleza que a natureza proporciona através dos olhos e das mãos dedicadas de nossa fundadora, Laura Gonçalves. Seja bem-vindo a um universo onde cada flor conta uma história, e cada arranjo é uma expressão artística do amor pela natureza.</p>
+                        </div>
+                    </section>
+                    </section>  
+                    <script src="script.js"></script>
+                </body>
+                </html>
+                </section>
